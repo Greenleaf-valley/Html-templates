@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Table Demo | Animated Data Table</title>
+    <style>
+        /* Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* ===== ANIMATED BACKGROUND ===== */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(-45deg, #1a2980, #26d0ce, #ff7e5f, #feb47b);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* ===== TABLE CONTAINER ===== */
+        .table-container {
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .table-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            animation: cardFloat 6s ease-in-out infinite;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @keyframes cardFloat {
+            0%, 100% { transform: translateY(0) rotateX(1deg); }
+            50% { transform: translateY(-15px) rotateX(-1deg); }
+        }
+
+        /* ===== TABLE HEADER ===== */
+        .table-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .table-title {
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .table-subtitle {
+            color: #666;
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+
+        /* ===== PREMIUM TABLE STYLES ===== */
+        .premium-table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        /* Table Head */
+        .premium-table thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .premium-table th {
+            color: white;
+            padding: 18px 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Table Body */
+        .premium-table tbody tr {
+            background: white;
+            transition: all 0.3s;
+        }
+
+        .premium-table tbody tr:hover {
+            background: linear-gradient(90deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+            transform: translateX(10px);
+            box-shadow: 5px 0 15px rgba(102, 126, 234, 0.1);
+        }
+
+        .premium-table tbody tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .premium-table td {
+            padding: 18px 20px;
+            color: #4a5568;
+            font-size: 15px;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        /* Status badges */
+        .status-badge {
+            display: inline-block;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .status-active { background: rgba(72, 187, 120, 0.1); color: #48bb78; }
+        .status-pending { background: rgba(246, 173, 85, 0.1); color: #f6ad55; }
+        .status-inactive { background: rgba(245, 101, 101, 0.1); color: #f56565; }
+
+        /* Demo watermark */
+        .demo-watermark {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #cbd5e0;
+            color: #718096;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <div class="table-card">
+            <div class="table-header">
+                <h1 class="table-title">📊 Team Projects</h1>
+                <p class="table-subtitle">An example of a premium animated table with hover effects and gradient design.</p>
+            </div>
+
+            <table class="premium-table">
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Lead</th>
+                        <th>Status</th>
+                        <th>Timeline</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Website Redesign</td>
+                        <td>Maria Lopez</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td>Q3 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile App Launch</td>
+                        <td>David Park</td>
+                        <td><span class="status-badge status-pending">Pending</span></td>
+                        <td>Q4 2025</td>
+                    </tr>
+                    <tr>
+                        <td>E‑commerce Platform</td>
+                        <td>Simone Chen</td>
+                        <td><span class="status-badge status-active">Active</span></td>
+                        <td>Q2 2025</td>
+                    </tr>
+                    <tr>
+                        <td>Data Dashboard</td>
+                        <td>Alex Rivera</td>
+                        <td><span class="status-badge status-inactive">On Hold</span></td>
+                        <td>TBD</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="demo-watermark">
+                <strong>Demo —</strong> Full version includes custom columns, pagination, export buttons, print styling, and unlimited rows.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Standard Contact Form Demo | HTML Templates</title>
+    <style>
+        Body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            Max-width: 700px;
+            Margin: 40px auto;
+            Padding: 30px;
+            Background-color: #f8f9fa;
+        }
+        H2 {
+            Color: #2c3e50;
+            Text-align: center;
+            Margin-bottom: 15px;
+            Padding-bottom: 15px;
+            Border-bottom: 2px solid #3498db;
+        }
+        Fieldset {
+            Border: 2px solid #3498db;
+            Border-radius: 8px;
+            Padding: 25px;
+            Margin-bottom: 25px;
+            Background-color: white;
+            Box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        Legend {
+            Color: #2c3e50;
+            Font-weight: bold;
+            Padding: 0 10px;
+            Font-size: 18px;
+        }
+        Label {
+            Display: block;
+            Margin-top: 15px;
+            Color: #34495e;
+            Font-weight: 500;
+        }
+        Input[type="text"],
+        Input[type="email"],
+        Textarea {
+            Width: 100%;
+            Padding: 12px;
+            Margin-top: 5px;
+            Border: 1px solid #bdc3c7;
+            Border-radius: 4px;
+            Font-size: 15px;
+            Box-sizing: border-box;
+            Transition: border 0.3s;
+        }
+        Input:focus,
+        Textarea:focus {
+            Border-color: #3498db;
+            Outline: none;
+            Box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+        }
+        Textarea {
+            Resize: vertical;
+            Min-height: 120px;
+        }
+        Button {
+            Background-color: #3498db;
+            Color: white;
+            Padding: 14px 28px;
+            Border: none;
+            Border-radius: 4px;
+            Cursor: pointer;
+            Font-size: 16px;
+            Font-weight: 600;
+            Margin-right: 10px;
+            Transition: background-color 0.3s;
+        }
+        Button:hover {
+            Background-color: #2980b9;
+        }
+        /* Demo note */
+        .demo-note {
+            Text-align: center;
+            Color: #7f8c8d;
+            Font-size: 14px;
+            Margin-top: 25px;
+            Padding-top: 15px;
+            Border-top: 1px dashed #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <p style="text-align:center; color:#555;">A clean, responsive contact form — just the essentials.</p>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Your Details</legend>
+
+            <label for="full-name">Full Name *</label>
+            <input type="text" id="full-name" name="full-name" placeholder="e.g. Jordan Smith" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Tell us what you need…" required></textarea>
+        </fieldset>
+
+        <button type="submit">Send Message</button>
+        <button type="reset">Clear</button>
+    </form>
+
+    <div class="demo-note">
+        <strong>Demo version.</strong> Full form includes phone, company, contact method, source selection, newsletter opt‑in, and custom styling adjustments.
+    </div>
+</body>
+</html>

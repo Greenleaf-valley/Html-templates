@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact form</title>
+    </head>
+    <body>
+        <h2>Contact Us</h2>
+
+        <form action="formspree.io url" method="post">
+            <fieldset>
+                <legend>Your information</legend>
+
+                <label for="full-name">Full Name:</label><br>
+                <input type="text" id="full-name" name="full-name" required><br><br>
+
+                <label for="email">Email address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Your message</legend>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="6" required></textarea><br><br>
+            </fieldset>
+
+            <button type="submit">Submit form</button>
+
+            <p><small>* Required field</small></p>
+            <p><small>We'll respond within 48 hours</small></p>
+            <p><small style="color: gray;">this is a demo-if you would like a full form consider purchasing the full form for a very low price</small></p>
+        </form>
+    </body>
+</html>
