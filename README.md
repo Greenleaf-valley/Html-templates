@@ -30,7 +30,13 @@ Everything is:
 - 1 round of revisions included
 - Accept USDT (TRC20)
 
-(Due to country currency problems i only accept USTD(preferrebly TRC20 for lower fees) 
+Payment Method: I accept USDT (TRC20 network). This allows for:
+
+· Fast, secure, and low-fee international transfers.
+· Direct payment without intermediaries.
+· Ideal for clients using digital currencies.
+
+"For quick and borderless payment, I work with USDT (TRC20), which I've found to be the most efficient method for international projects."
 
 ### 👀 Live Demos
 [Links to your demo files after uploading]
