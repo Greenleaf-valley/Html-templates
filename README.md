@@ -9,12 +9,10 @@ I build clean, responsive, and custom‑coded HTML/CSS templates — plus fix me
 ### 🧾 Services & Pricing
 
 **1. Custom Tables**
-- Basic – $5 (simple semantic table)
 - Standard – $8 (styled with hover effects)
 - Premium – $12 (animated, gradient, interactive)
 
 **2. Custom Forms**
-- Basic – $5 (essential contact form)
 - Standard – $8 (polished layout, validation)
 - Premium – $15 (multi‑section, animated)
 
